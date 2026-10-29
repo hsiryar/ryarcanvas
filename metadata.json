@@ -1,0 +1,6 @@
+{
+  "name": "RYAR Canvas - Digital Agency",
+  "description": "Official website for RYAR Canvas digital agency offering website development, e-commerce stores with custom admin panels, and Meta & TikTok advertising.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

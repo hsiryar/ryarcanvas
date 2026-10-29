@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #324bb0;
+    --color-primary-hover: #293e96;
+    --color-secondary: #7e33b8;
+    --color-secondary-hover: #6a2b9d;
+    --color-text-main: #181d28;
+    --color-text-muted: #5b6275;
+    --color-bg-surface: #f8fafc;
+    --color-border: #e2e8f0;
+    --color-success: #16865c;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: var(--color-text-main);
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+}
+
+.brand-gradient {
+  background: linear-gradient(110deg, #324bb0 0%, #7e33b8 100%);
+}
+
+.brand-gradient-text {
+  background: linear-gradient(110deg, #324bb0 0%, #7e33b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-gradient-soft {
+  background: linear-gradient(135deg, rgba(50, 75, 176, 0.04) 0%, rgba(126, 51, 184, 0.06) 100%);
+}
+
+.brand-card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.brand-card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px -8px rgba(50, 75, 176, 0.1), 0 4px 12px -2px rgba(126, 51, 184, 0.06);
+}

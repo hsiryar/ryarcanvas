@@ -1,0 +1,2022 @@
+# BUILD THE COMPLETE RYAR CANVAS DIGITAL AGENCY WEBSITE
+
+## 1. YOUR ROLE AND MISSION
+
+Act as a senior web developer, UI/UX designer, brand identity specialist, conversion-rate optimization expert, technical SEO specialist, and GitHub Pages deployment engineer.
+
+Your task is to design and develop a complete, professional, production-ready website for my digital agency, RYAR Canvas, from scratch.
+
+Do not merely generate a visual mockup, a landing-page concept, or a design proposal. Build the actual, fully functional static website, including all required HTML, CSS, JavaScript, assets, navigation, interactive components, service details, package selection flows, WhatsApp integrations, and deployment documentation.
+
+The finished website must be ready to publish using GitHub Pages and my custom domain.
+
+**Primary objective:** Establish RYAR Canvas as a trustworthy, modern digital agency that converts visitors into clients through clear service explanations, professional branding, strong calls to action, transparent package information, and effortless WhatsApp communication.
+
+Every design and technical decision should support credibility, clarity, usability, and lead generation.
+
+---
+
+# 2. BRAND IDENTITY AND CORE INFORMATION
+
+## Official Brand Name
+
+RYAR Canvas
+
+Use the exact brand name consistently across the website, navigation, footer, metadata, page titles, and social sharing information.
+
+## Official Tagline
+
+"Let's Work Together to Bring Your Ideas to Life."
+
+Display this tagline prominently in the hero section and use it where appropriate in the website's brand messaging.
+
+## Official Logo
+
+I will upload a reference image containing my existing RYAR Canvas logo.
+
+The logo features:
+
+- An RC monogram.
+- A blue-to-purple gradient.
+- Custom typography.
+- A distinctive visual identity.
+
+You MUST use the exact logo supplied in the reference image.
+
+Logo implementation requirements:
+
+1. Inspect the uploaded reference image and identify the original logo artwork.
+2. Preserve the original monogram, typography, proportions, gradient, and visual characteristics.
+3. Do not redesign, reinterpret, replace, or generate a different logo.
+4. Do not substitute a generic RC icon or a text-only approximation.
+5. Do not distort the logo, stretch it, change its aspect ratio, or apply effects that alter its identity.
+6. If the image includes unnecessary whitespace, crop the whitespace only when doing so does not modify the logo itself.
+7. If the original logo is supplied as a raster image, optimize it without noticeably degrading quality.
+8. Prefer the original transparent PNG or SVG asset if available.
+9. If only a reference image is provided, extract or crop the logo accurately when technically feasible.
+10. Keep the original logo file in the project's assets directory.
+
+Suggested asset path:
+
+assets/images/ryar-canvas-logo.png
+
+If a genuine transparent version cannot be created without damaging the original artwork, retain the supplied image rather than fabricating a replacement.
+
+Use the logo consistently in the header, footer, browser favicon where practical, and appropriate branding areas.
+
+## Contact Information
+
+WhatsApp business number:
+
++92 349 7925109
+
+WhatsApp URL destination:
+
+[https://wa.me/923497925109](https://wa.me/923497925109)
+
+Instagram username:
+
+@ryarcanvas
+
+Instagram profile:
+
+[https://www.instagram.com/ryarcanvas/](https://www.instagram.com/ryarcanvas/)
+
+The website must display the social platform names only:
+
+- WhatsApp
+- Instagram
+
+Do not display the raw phone number or the full Instagram handle as visible text in the header, footer, or social contact labels.
+
+The actual destination URLs must remain functional.
+
+Use accessible icons alongside the platform names if appropriate. Use inline SVG icons or a lightweight icon library only if it can be used without creating unnecessary dependencies.
+
+## Custom Domain
+
+Official website domain:
+
+riarcanvas.online
+
+Configure the website for this domain and provide clear GitHub Pages setup instructions.
+
+Important: Use the domain exactly as provided. Do not silently replace it with ryarcanvas.online or another spelling.
+
+---
+
+# 3. DESIGN DIRECTION AND VISUAL IDENTITY
+
+## Reference Website
+
+Use Exposure Ninja as a design inspiration reference:
+
+[https://www.exposureninja.com/](https://www.exposureninja.com/)
+
+Study the general design principles associated with a professional digital marketing and agency website, including:
+
+- Clean, confident layouts.
+- Strong headline hierarchy.
+- Clear value propositions.
+- Large, visible calls to action.
+- Professional typography.
+- Trust-focused messaging.
+- Structured service presentations.
+- Generous whitespace.
+- Consistent spacing.
+- Strong conversion-focused page structure.
+
+Use these principles as inspiration only.
+
+Do not copy Exposure Ninja's exact layout, branding, text, proprietary graphics, or website source code.
+
+Create an original identity for RYAR Canvas using the supplied logo and the following requirements.
+
+## Color Palette
+
+Develop a cohesive blue-to-purple visual system that matches the uploaded logo as closely as possible.
+
+The palette should be extracted from the actual logo whenever feasible.
+
+Use the following provisional colors only if exact logo-color extraction is unavailable:
+
+- Primary blue: #3867F4
+- Secondary blue: #5579F8
+- Primary purple: #7952E8
+- Deep purple: #5937B7
+- Main background: #FFFFFF
+- Alternate background: #F7F8FC
+- Primary text: #171A2B
+- Secondary text: #62677A
+- Border color: #E6E8F0
+- Success accent: #16865C
+
+The logo's actual gradient colors take precedence over these provisional values.
+
+Suggested gradient:
+
+linear-gradient(110deg, [EXTRACTED_BLUE], [EXTRACTED_PURPLE])
+
+Implement colors as CSS custom properties so they can be updated centrally.
+
+Example:
+
+&#x20;{
+\--color-primary: #3867F4;
+\--color-secondary: #7952E8;
+\--color-text: #171A2B;
+\--color-muted: #62677A;
+\--color-background: #FFFFFF;
+\--color-surface: #F7F8FC;
+\--color-border: #E6E8F0;
+\--gradient-brand: linear-gradient(110deg, #3867F4, #7952E8);
+}
+
+Replace provisional values with the extracted logo colors whenever possible.
+
+## Typography
+
+Use a modern, highly legible sans-serif typeface.
+
+Recommended options include:
+
+- Inter.
+- Manrope.
+- Plus Jakarta Sans.
+
+Choose one primary font family and use it consistently.
+
+If a Google Font is used, provide a sensible system-font fallback.
+
+Typography must feature:
+
+- Bold, clear hero headlines.
+- Readable body text.
+- Distinct heading levels.
+- Comfortable line heights.
+- Responsive font sizes.
+- Strong contrast.
+
+## Visual Style
+
+The overall visual identity should communicate:
+
+- Professionalism.
+- Creativity.
+- Technical competence.
+- Reliability.
+- Transparency.
+- Modern digital expertise.
+- A premium but approachable service experience.
+
+Use a predominantly white and soft-neutral interface, supported by blue-to-purple gradient accents.
+
+Avoid:
+
+- Excessive gradients on every element.
+- Unnecessary animation.
+- Cluttered layouts.
+- Oversized decorative graphics that interfere with readability.
+- Fake client logos.
+- Fake customer reviews.
+- Fabricated performance statistics.
+- Artificial urgency.
+- Misleading trust badges.
+- Excessive glassmorphism.
+- Generic template-like sections.
+- Distracting background effects.
+
+Animations should be subtle, purposeful, and respectful of reduced-motion preferences.
+
+---
+
+# 4. TECHNOLOGY STACK AND PROJECT REQUIREMENTS
+
+Build the website as a static web application using:
+
+- Semantic HTML5.
+- Tailwind CSS or a compiled Tailwind CSS build.
+- Vanilla JavaScript.
+- Standard static assets.
+
+The final website must run on GitHub Pages without a server-side runtime.
+
+Do not require:
+
+- Node.js on the production server.
+- PHP.
+- Python server processes.
+- A custom backend.
+- A database.
+- Server-side rendering.
+- Paid hosting.
+- Mandatory third-party APIs for basic navigation or WhatsApp ordering.
+
+You may use a development build tool locally if it materially improves the project, but the delivered repository must contain everything necessary for GitHub Pages to serve the finished website.
+
+Prefer a straightforward static implementation with minimal build complexity.
+
+If using Tailwind CSS, compile the required CSS before deployment. Do not rely on a development-only Tailwind CDN configuration for production.
+
+## Recommended File Structure
+
+Create a clean, maintainable project structure such as:
+
+ryar-canvas/
+├── index.html
+├── services/
+│   ├── website-development.html
+│   ├── ecommerce-development.html
+│   └── digital-marketing.html
+├── coming-soon/
+│   ├── ai-calling-agent.html
+│   ├── automated-lead-generation.html
+│   └── academy.html
+├── assets/
+│   ├── images/
+│   │   ├── ryar-canvas-logo.png
+│   │   ├── designbench-thumbnail.webp
+│   │   └── og-image.webp
+│   ├── icons/
+│   └── css/
+│       └── styles.css
+├── js/
+│   ├── main.js
+│   ├── services.js
+│   ├── whatsapp.js
+│   └── forms.js
+├── favicon.ico
+├── robots.txt
+├── sitemap.xml
+├── 404.html
+├── CNAME
+├── README.md
+└── package.json (only if a build process is used)
+
+You may improve this structure if necessary, but keep it understandable and appropriate for a static GitHub Pages deployment.
+
+If the project uses a build process, configure its output directory and GitHub Actions deployment workflow correctly.
+
+Every internal link, image path, stylesheet, script, and asset must work on the custom domain.
+
+Avoid root-relative paths that break when testing a project under a GitHub Pages repository subpath. Either use a consistent path strategy or configure deployment for the custom domain and test both scenarios.
+
+---
+
+# 5. REQUIRED WEBSITE ARCHITECTURE
+
+Build the following complete website experience.
+
+## Main Website
+
+The homepage must include:
+
+1. Header and navigation.
+2. Hero section.
+3. Trust and value proposition section.
+4. Services overview.
+5. Why Choose RYAR Canvas section.
+6. Our Working Process section.
+7. Portfolio section.
+8. Coming Soon services section.
+9. Frequently Asked Questions section.
+10. Strong final call to action.
+11. Footer.
+
+## Dedicated Service Pages
+
+Create separate, fully functional pages for:
+
+- Website Development.
+- E-commerce Website + Custom Admin Panel.
+- Digital Marketing.
+
+The homepage must not display the actual service package prices.
+
+Visitors must click a service card or its CTA to open the relevant service page and view the detailed packages.
+
+## Coming Soon Pages
+
+Create dedicated landing pages for:
+
+- AI Calling Agent.
+- Automated Lead Gen Pipeline.
+- Ryar Canvas Academy.
+
+Each page must be accessible, visually complete, and include a functioning email-capture interface when the required external form endpoint is configured.
+
+## Navigation
+
+Use clear, concise navigation labels:
+
+- Home
+- Services
+- Portfolio
+- Coming Soon
+- Contact
+
+The Services menu may contain a dropdown listing all three active services.
+
+The navigation must work on desktop, tablet, and mobile.
+
+On mobile:
+
+- Use a clean hamburger menu.
+- Ensure all navigation items are keyboard accessible.
+- Close the menu after a navigation selection.
+- Prevent menu controls from obstructing page content.
+- Include visible focus states.
+- Avoid horizontal overflow.
+
+The header should be sticky or fixed only if doing so improves usability. If sticky, account for its height when navigating to anchor sections.
+
+---
+
+# 6. HOMEPAGE HERO SECTION
+
+Create a high-impact, conversion-focused hero section.
+
+Suggested headline:
+
+"Your Ideas. Our Digital Expertise."
+
+Supporting headline or paragraph:
+
+"From professional websites and powerful online stores to targeted digital advertising, RYAR Canvas helps turn your business ideas into practical digital experiences."
+
+Display the official tagline:
+
+"Let's Work Together to Bring Your Ideas to Life."
+
+Primary CTA:
+
+"Get a Quote"
+
+Secondary CTA:
+
+"Explore Our Services"
+
+The primary CTA must open WhatsApp with a prefilled introductory inquiry.
+
+Example message:
+
+"Hello RYAR Canvas! I'm interested in your digital services. Please help me choose the right solution for my business."
+
+The secondary CTA must navigate to the services section.
+
+Do not display prices in the hero.
+
+## Hero Visual
+
+Create an original, refined visual representing the agency's digital capabilities.
+
+Possible elements:
+
+- Abstract website interface previews.
+- Clean browser-window mockups.
+- E-commerce dashboard illustrations.
+- Brand-gradient shapes.
+- A subtle composition of website, store, and marketing interface elements.
+
+Use CSS, inline SVG, or locally stored illustrations.
+
+Do not use fabricated client screenshots or imply that illustrative interface designs are actual client work.
+
+On mobile, stack the visual and text naturally.
+
+---
+
+# 7. SERVICES OVERVIEW ON THE HOMEPAGE
+
+Display three primary service cards.
+
+## Card 1: Website Development
+
+Description:
+
+"Launch a professional website for your blog, content brand, or online project. Choose a hosting package that fits your plans, with domain-related setup, website development, and advertising-code setup guidance."
+
+CTA:
+
+"Explore Website Packages"
+
+Destination:
+
+services/website-development.html
+
+## Card 2: E-commerce Website + Custom Admin Panel
+
+Description:
+
+"Build a professional online store with a custom administration experience to manage your products and orders. Avoid mandatory monthly Shopify platform subscription fees through our one-time website development pricing structure."
+
+CTA:
+
+"Explore E-commerce Packages"
+
+Destination:
+
+services/ecommerce-development.html
+
+Do not claim that the store has no operating costs of any kind. Hosting renewals, domain renewals, payment-processing fees, third-party services, maintenance, and other optional expenses may still apply.
+
+## Card 3: Digital Marketing
+
+Description:
+
+"Reach your target audience and generate business opportunities through focused Facebook, Instagram, and TikTok advertising campaigns."
+
+CTA:
+
+"Explore Digital Marketing"
+
+Destination:
+
+services/digital-marketing.html
+
+Do not show package prices on any of these homepage cards.
+
+Use a consistent card design, subtle hover effects, clear headings, and mobile-friendly CTA buttons.
+
+---
+
+# 8. SERVICE PAGE 1: WEBSITE DEVELOPMENT
+
+Create a detailed, conversion-focused page for website development.
+
+Suggested page title:
+
+"Website Development Packages | RYAR Canvas"
+
+## Service Introduction
+
+Headline:
+
+"Build Your Website. Grow Your Digital Presence."
+
+Description:
+
+"We help bloggers, publishers, creators, and businesses launch professional websites with domain-related setup, hosting packages, website development, and advertising-code setup guidance."
+
+Explain the service in accessible language.
+
+## Important Scope and Transparency
+
+The service is best suited to blogging and content-focused websites.
+
+Describe the included services accurately:
+
+- Website development.
+- Hosting for the selected package duration.
+- Domain-related setup or domain registration where included in the confirmed package.
+- Advertising-code setup guidance.
+- Basic website configuration.
+- Guidance on launching the website.
+
+Do not promise guaranteed approval for Google AdSense or any other advertising platform.
+
+Do not describe advertising-code setup guidance as guaranteed monetization.
+
+Clearly explain that any domain registration or renewal, third-party hosting limitations, taxes, or additional services outside the confirmed package scope must be discussed before purchase.
+
+If the exact hosting provider, domain renewal policy, or included domain terms have not been provided, do not invent them. Include a concise note that the exact inclusions will be confirmed through WhatsApp before payment.
+
+## Pricing Packages
+
+Display the following packages exactly as specified.
+
+### Package A
+
+Name:
+
+12 Months Hosting + 1 Website
+
+Price:
+
+$99 USD
+
+Description:
+
+"Suitable for launching one website with a 12-month hosting package."
+
+CTA:
+
+"Choose This Package"
+
+### Package B
+
+Name:
+
+12 Months Hosting + 2 Websites
+
+Price:
+
+$139 USD
+
+Description:
+
+"A flexible option for managing two websites with 12 months of hosting."
+
+CTA:
+
+"Choose This Package"
+
+### Package C
+
+Name:
+
+24 Months Hosting + 1 Website
+
+Price:
+
+$129 USD
+
+Description:
+
+"Extended hosting coverage for one website over 24 months."
+
+CTA:
+
+"Choose This Package"
+
+### Package D
+
+Name:
+
+24 Months Hosting + 3 Websites
+
+Price:
+
+$189 USD
+
+Description:
+
+"An option for launching up to three websites with 24 months of hosting."
+
+CTA:
+
+"Choose This Package"
+
+### Package E
+
+Name:
+
+48 Months Hosting + 5 Websites
+
+Price:
+
+$239 USD
+
+Description:
+
+"Longer-term hosting for a portfolio of up to five websites."
+
+CTA:
+
+"Choose This Package"
+
+### Package F
+
+Name:
+
+48 Months Hosting + 10 Websites
+
+Price:
+
+$299 USD
+
+Description:
+
+"An expanded option for managing up to ten websites with 48 months of hosting."
+
+CTA:
+
+"Choose This Package"
+
+### Custom Package
+
+Name:
+
+Custom Website Package
+
+Description:
+
+"Need a different number of websites, a different hosting duration, or a more specific setup? Contact us to discuss your requirements."
+
+CTA:
+
+"Chat Us on WhatsApp"
+
+## Package Design
+
+Use a clean responsive pricing grid.
+
+On desktop, display multiple cards per row.
+
+On tablets, use a balanced two-column layout.
+
+On mobile, display one package per row.
+
+Each card should include:
+
+- Package name.
+- Prominent price.
+- Hosting duration.
+- Website quantity.
+- Concise description.
+- Clear WhatsApp CTA.
+
+Do not invent package features that are not listed in the approved scope.
+
+Do not add recurring monthly prices.
+
+Do not automatically label a package "Best Seller" or "Most Popular" without real business data.
+
+---
+
+# 9. SERVICE PAGE 2: E-COMMERCE WEBSITE + CUSTOM ADMIN PANEL
+
+Create a dedicated e-commerce service page.
+
+Suggested page title:
+
+"E-commerce Website Development | RYAR Canvas"
+
+## Core Headline
+
+"Your Online Store. Your Platform. Your Control."
+
+Supporting copy:
+
+"Launch a professional online store with a custom admin panel designed to help you manage your products and orders without depending on a mandatory monthly Shopify platform subscription."
+
+## Mandatory Commercial Message
+
+Clearly explain:
+
+"One-Time Website Development Payment — No Mandatory Monthly Shopify Platform Subscription."
+
+Emphasize that the customer pays the agreed package price for the included development and hosting period rather than paying a mandatory recurring Shopify subscription for the custom-built store.
+
+However, be precise and transparent.
+
+The absence of a Shopify subscription does not mean that every aspect of running the store is permanently free.
+
+Potential additional costs may include:
+
+- Domain renewals.
+- Hosting renewals after the included period.
+- Payment gateway fees.
+- Third-party integrations.
+- Premium plugins or external services.
+- Optional maintenance.
+- Future feature development.
+- Taxes or transaction charges where applicable.
+
+Do not promise that payment processing or third-party services are free.
+
+Do not claim that the website includes features that have not been agreed upon.
+
+## Explain the Custom Admin Panel
+
+Describe the intended administrative experience using clear, nontechnical language.
+
+The proposed store should be designed to support, where included in the final agreed scope:
+
+- Product management.
+- Product descriptions and images.
+- Pricing and inventory information.
+- Order viewing and management.
+- Store content updates.
+- Basic store administration.
+
+Important implementation requirement:
+
+The public marketing website will be hosted on GitHub Pages, but a secure e-commerce store and custom admin panel generally require a backend, database, authentication system, and secure payment integration.
+
+Do not falsely claim that a fully functional, secure custom admin panel can operate entirely through static HTML, CSS, and browser-side JavaScript.
+
+For this service page, present the e-commerce offering as an agency service with its own separately scoped technical implementation.
+
+Use WhatsApp to confirm the intended platform, hosting architecture, features, security, payment gateway, and exact delivery scope before a client places an order.
+
+The RYAR Canvas agency website itself must remain static and deployable to GitHub Pages.
+
+## Pricing Packages
+
+### Package A
+
+Name:
+
+12 Months Hosting
+
+Price:
+
+$129 USD
+
+Description:
+
+"A one-time website development package with 12 months of hosting included, subject to the confirmed project scope."
+
+CTA:
+
+"Choose This Package"
+
+### Package B
+
+Name:
+
+18 Months / 24 Months Hosting
+
+Price:
+
+$189 USD
+
+Description:
+
+"An extended hosting package. Confirm whether the intended hosting duration is 18 or 24 months before ordering."
+
+CTA:
+
+"Choose This Package"
+
+IMPORTANT:
+
+The original specification lists "18 Months/24 Months Hosting" as one $189 package. Preserve the wording as provided. Do not silently assume whether this means two alternative durations or a typo.
+
+The WhatsApp order message must explicitly ask the customer to confirm the preferred duration.
+
+### Package C
+
+Name:
+
+48 Months Hosting
+
+Price:
+
+$199 USD
+
+Description:
+
+"A longer hosting package for your online store, with the exact included features and service scope confirmed before payment."
+
+CTA:
+
+"Choose This Package"
+
+### Custom Package
+
+Name:
+
+Custom E-commerce Solution
+
+Description:
+
+"Need additional features, integrations, a different hosting arrangement, or a tailored admin panel? Let's discuss your requirements."
+
+CTA:
+
+"Chat Us on WhatsApp"
+
+## Package Transparency
+
+For all packages:
+
+- Prices must be shown in USD.
+- Prices represent the specified package prices, not monthly rates.
+- Do not invent recurring subscriptions.
+- Clearly identify the included hosting duration.
+- Confirm the store features and technical architecture before accepting payment.
+- Do not promise unlimited products, unlimited storage, or unlimited support unless explicitly agreed.
+
+---
+
+# 10. SERVICE PAGE 3: DIGITAL MARKETING
+
+Create a dedicated digital marketing service page.
+
+Suggested page title:
+
+"Meta Ads & TikTok Advertising | RYAR Canvas"
+
+## Headline
+
+"Reach the Right Audience. Create More Opportunities."
+
+Supporting copy:
+
+"RYAR Canvas helps businesses plan, launch, and improve paid advertising campaigns across Facebook, Instagram, and TikTok."
+
+## Supported Advertising Platforms
+
+The service must focus strictly on:
+
+1. Meta Ads — Facebook and Instagram.
+2. TikTok Ads.
+
+Google Ads must NOT appear as an offered service.
+
+Do not add Google Ads to the homepage, service page, navigation, service descriptions, or marketing materials.
+
+## Explain the Service
+
+Include sections explaining:
+
+### Meta Advertising
+
+Describe how Facebook and Instagram campaigns can help businesses:
+
+- Reach relevant audiences.
+- Promote products and services.
+- Generate inquiries.
+- Drive traffic to websites or online stores.
+- Test advertising creatives and messaging.
+
+### TikTok Advertising
+
+Explain how TikTok advertising can help businesses:
+
+- Introduce products to relevant audiences.
+- Test short-form creative concepts.
+- Increase visibility.
+- Generate traffic and potential leads.
+
+### Campaign Planning
+
+Describe a process that may include:
+
+- Understanding business goals.
+- Reviewing the target audience.
+- Developing campaign messaging.
+- Preparing or coordinating creative assets.
+- Setting up agreed campaigns.
+- Monitoring performance.
+- Reviewing results and recommending improvements.
+
+Clearly distinguish agency service fees from advertising spend.
+
+Do not imply that the agency's service fee automatically includes the client's advertising budget.
+
+Do not promise guaranteed sales, leads, ROAS, or specific business results.
+
+## Primary CTA
+
+Button text:
+
+"Chat Us on WhatsApp"
+
+Prefilled WhatsApp message:
+
+"Hello RYAR Canvas! I'm interested in your Digital Marketing services for Meta Ads (Facebook/Instagram) and TikTok Ads. I'd like to discuss my business goals, target audience, campaign requirements, and pricing."
+
+Do not display invented marketing packages or prices.
+
+The final CTA should open WhatsApp directly.
+
+---
+
+# 11. COMING SOON SERVICES
+
+Create three dedicated coming-soon landing pages.
+
+Each service should also appear in a Coming Soon section on the homepage.
+
+The pages must feel complete, professionally designed, and consistent with the main brand.
+
+Do not create empty or broken placeholder links.
+
+## Service A: AI Calling Agent
+
+Page title:
+
+"AI Calling Agent — Coming Soon | RYAR Canvas"
+
+Headline:
+
+"Smarter Conversations. More Efficient Workflows."
+
+Description:
+
+"RYAR Canvas is preparing an AI Calling Agent solution designed to explore how automated voice interactions can support business communication and customer workflows."
+
+Potential future use cases may be mentioned as possibilities, not guaranteed product features.
+
+CTA:
+
+"Get Early Access"
+
+## Service B: Automated Lead Gen Pipeline
+
+Page title:
+
+"Automated Lead Gen Pipeline — Coming Soon | RYAR Canvas"
+
+Headline:
+
+"Build Better Lead Workflows."
+
+Description:
+
+"We're developing a future-focused lead generation solution designed to help businesses explore more organized approaches to discovering, qualifying, and managing potential customers."
+
+CTA:
+
+"Get Early Access"
+
+Do not promise specific integrations, guaranteed leads, or automated capabilities that have not been built.
+
+## Service C: Ryar Canvas Academy
+
+Page title:
+
+"Ryar Canvas Academy — Coming Soon | RYAR Canvas"
+
+Headline:
+
+"Learn Digital Skills. Build Your Future."
+
+Description:
+
+"Ryar Canvas Academy is an upcoming learning initiative focused on practical digital skills, creative work, and online business opportunities."
+
+CTA:
+
+"Join the Interest List"
+
+Do not invent course titles, instructors, certificates, enrollment dates, or course fees.
+
+## Email Capture Form
+
+Each coming-soon page must include an email-capture form.
+
+Form fields:
+
+- Email address.
+- Optional name.
+- Optional area of interest.
+
+Include:
+
+- Clear labels.
+- Email validation.
+- A privacy notice.
+- A consent checkbox if required by the selected collection service.
+- A submit button.
+- Loading and success states.
+- Error handling.
+- A clear confirmation message.
+
+Because the website is static, form submissions cannot be stored securely in a database without an external service.
+
+Implement one of the following approaches:
+
+Preferred approach:
+Use a configurable third-party form endpoint compatible with static websites.
+
+Create a centralized configuration variable such as:
+
+const FORM_ENDPOINT = "";
+
+When a legitimate form endpoint is configured, submit the data securely over HTTPS.
+
+If no endpoint is configured:
+
+- Do not pretend that the form successfully saved an email.
+- Display a clear notice explaining that early-access registration is not yet connected.
+- Provide a WhatsApp alternative so visitors can express interest.
+- Keep the UI ready for future integration.
+
+Do not expose secret API keys in frontend JavaScript.
+
+Do not store collected emails in localStorage and describe them as registered subscribers.
+
+Add a concise privacy notice stating that submitted contact information will be used for the stated early-access purpose.
+
+Link to a privacy policy page or an appropriate privacy section.
+
+---
+
+# 12. WHATSAPP INTEGRATION — CRITICAL FUNCTIONALITY
+
+All primary service-ordering and inquiry actions must open WhatsApp directly.
+
+Use the following number:
+
+923497925109
+
+Canonical base URL:
+
+[https://wa.me/923497925109](https://wa.me/923497925109)
+
+Construct prefilled messages using:
+
+encodeURIComponent(message)
+
+Open the URL using a standard anchor link wherever possible.
+
+For JavaScript-driven actions, use window\.location.href or window\.open with a valid user-triggered interaction and test behavior across mobile and desktop browsers.
+
+Prefer direct navigation over opening unnecessary popups.
+
+## General Inquiry Message
+
+"Hello RYAR Canvas! I visited your website and would like to discuss your services. Please guide me through the available options."
+
+## Website Package Message Format
+
+When a visitor selects a website development package, automatically construct a message containing:
+
+- Greeting.
+- Selected service.
+- Exact package name.
+- Package price in USD.
+- Hosting duration.
+- Number of websites.
+- Request to confirm the included scope.
+- Request for the next steps.
+
+Example:
+
+"Hello RYAR Canvas! I'm interested in the Website Development service.
+
+Selected Package: 12 Months Hosting + 2 Websites
+Package Price: $139 USD
+Hosting Duration: 12 Months
+Number of Websites: 2
+
+Please confirm the package inclusions, domain and hosting terms, estimated delivery time, and the next steps."
+
+The values must be populated dynamically based on the actual package selected.
+
+Do not send the same hardcoded package information for every card.
+
+## E-commerce Package Message Format
+
+Include:
+
+- Service name.
+- Selected package.
+- Package price.
+- Hosting duration.
+- Custom admin panel requirements.
+- Confirmation of the included technical scope.
+- Clarification of the 18-month/24-month option when applicable.
+- Request for payment and project-start information.
+
+Example:
+
+"Hello RYAR Canvas! I'm interested in your E-commerce Website + Custom Admin Panel service.
+
+Selected Package: 18 Months / 24 Months Hosting
+Package Price: $189 USD
+
+Please confirm the available hosting duration, the included store features, custom admin panel scope, payment gateway options, hosting details, and the next steps."
+
+Where the selected package requires a duration choice, explicitly ask the customer to confirm that choice.
+
+## Digital Marketing Message
+
+Use the exact service inquiry format described in the Digital Marketing section.
+
+## Custom Package Message
+
+For custom package buttons, use a message that asks the client to describe their requirements.
+
+Example:
+
+"Hello RYAR Canvas! I'd like a custom package. Please help me choose the right solution. My requirements are:"
+
+## WhatsApp Button Requirements
+
+Every WhatsApp button must:
+
+- Open the correct business number.
+- Include a meaningful prefilled message.
+- Encode special characters correctly.
+- Work on mobile and desktop.
+- Remain functional when JavaScript is disabled if implemented as a normal link.
+- Include an accessible label.
+- Have a visible hover and keyboard-focus state.
+
+Do not require the user to manually copy package details.
+
+Do not display the business phone number as visible text.
+
+Do not create a fake checkout page or pretend that the website directly processes payments.
+
+The website's conversion endpoint is WhatsApp, where the client and agency can confirm the project details.
+
+---
+
+# 13. DYNAMIC PORTFOLIO SECTION
+
+Create a professional portfolio section titled:
+
+"Our Work"
+
+Supporting copy:
+
+"Explore selected digital projects and see how ideas take shape through thoughtful design and development."
+
+## Active Portfolio Project
+
+Project name:
+
+Design Bench
+
+Live project URL:
+
+[https://designbench.netlify.app](https://designbench.netlify.app)
+
+This is the only currently supplied portfolio project.
+
+## Portfolio Card
+
+Create a clean, visually appealing project card containing:
+
+- Project thumbnail.
+- Project name.
+- Short, neutral description.
+- "View Live Project" button.
+- A clickable thumbnail.
+- A clear indication that the project opens an external website.
+
+The thumbnail and button must open the live project in a new browser tab.
+
+Use:
+
+target="\_blank"
+rel="noopener noreferrer"
+
+Do not invent project results, client testimonials, conversion statistics, or project details that have not been supplied.
+
+## Thumbnail Creation
+
+Use the actual Design Bench website to obtain a representative thumbnail when technically feasible and permitted.
+
+If the external site cannot be captured automatically, create a clean, clearly representative placeholder illustration that does not misrepresent the actual project.
+
+Do not use an unrelated stock image as though it were a screenshot of Design Bench.
+
+Recommended asset path:
+
+assets/images/designbench-thumbnail.webp
+
+Optimize the thumbnail for performance.
+
+Provide descriptive alt text.
+
+## Future Project Slots
+
+The portfolio must support adding new projects easily.
+
+Create a reusable portfolio data structure in JavaScript.
+
+Example:
+
+const portfolioProjects = [
+{
+name: "Design Bench",
+url: "[https://designbench.netlify.app](https://designbench.netlify.app)",
+image: "assets/images/designbench-thumbnail.webp",
+description: "Explore the Design Bench project.",
+active: true
+}
+];
+
+Use this data to render the active project card.
+
+All additional project slots must remain clean and empty.
+
+Do not display:
+
+- Fake project names.
+- Blank image boxes.
+- Broken image icons.
+- Fake case studies.
+- Empty placeholder cards.
+
+The layout should look intentional with only one active project.
+
+When more real projects are added to the data structure, the grid should automatically accommodate them.
+
+---
+
+# 14. WHY CHOOSE RYAR CANVAS
+
+Create a trust-focused section explaining the agency's working principles.
+
+Suggested points:
+
+### Practical Digital Solutions
+
+"We focus on digital services that support your business goals and online presence."
+
+### Clear Communication
+
+"We discuss your requirements, explain available options, and clarify the agreed scope before work begins."
+
+### Tailored Recommendations
+
+"We help you choose a suitable service based on your needs rather than pushing unnecessary features."
+
+### Transparent Package Discussions
+
+"We explain package pricing, hosting duration, included services, and potential additional costs before confirming an order."
+
+### Direct Communication
+
+"Speak with our team directly through WhatsApp to discuss your project and next steps."
+
+Do not invent:
+
+- Years of experience.
+- Number of clients.
+- Revenue figures.
+- Success rates.
+- Awards.
+- Certifications.
+- Customer testimonials.
+
+Only display factual claims supported by information supplied by the business.
+
+---
+
+# 15. OUR WORKING PROCESS
+
+Create a simple, visually engaging four-step process.
+
+### Step 1: Tell Us About Your Idea
+
+The visitor contacts RYAR Canvas through WhatsApp and explains their business or project.
+
+### Step 2: Discuss the Right Solution
+
+The agency helps the client understand the available service, package, scope, and requirements.
+
+### Step 3: Confirm the Details
+
+Both parties confirm deliverables, price, technical requirements, estimated timeline, and payment terms before work begins.
+
+### Step 4: Move Forward Together
+
+The agency proceeds according to the confirmed agreement and communicates the relevant next steps.
+
+Do not promise guaranteed turnaround times.
+
+Do not imply that selecting a WhatsApp package automatically creates a binding contract or confirms payment.
+
+---
+
+# 16. FREQUENTLY ASKED QUESTIONS
+
+Create an accessible accordion-style FAQ section.
+
+Include the following questions and concise, transparent answers.
+
+### What services does RYAR Canvas provide?
+
+RYAR Canvas provides website development, e-commerce website development with a custom admin panel, and digital marketing focused on Meta Ads and TikTok Ads. Additional services are being prepared.
+
+### How can I order a service?
+
+Choose the relevant service and package, then click its WhatsApp button. A prefilled message will help you discuss your requirements with the agency.
+
+### Why are prices not shown on the homepage?
+
+The homepage is designed to introduce the services. Detailed packages and their prices are available on the relevant service pages.
+
+### Are website development packages billed monthly?
+
+The listed prices are package prices in USD for the specified hosting periods. They are not advertised as monthly subscription prices. Confirm the included services and renewal terms before payment.
+
+### Does the e-commerce service require monthly Shopify subscription payments?
+
+The proposed custom e-commerce solution is designed to avoid a mandatory monthly Shopify platform subscription. Other costs, including domain renewal, hosting after the included period, payment-processing fees, integrations, and maintenance, may still apply.
+
+### Does the website development service guarantee AdSense approval?
+
+No. The service may include advertising-code setup guidance, but approval and monetization depend on the advertising platform's requirements and the website's compliance.
+
+### Do you provide Google Ads?
+
+No. The digital marketing service described on this website focuses on Meta Ads for Facebook and Instagram and TikTok Ads.
+
+### Can I request a custom package?
+
+Yes. Use the custom-package WhatsApp button to explain your requirements.
+
+### How do I join a coming-soon service?
+
+Visit the relevant coming-soon page and use the early-access form when registration is configured. If the form is not yet connected, use the WhatsApp alternative.
+
+### Are all services hosted on GitHub Pages?
+
+No. GitHub Pages hosts the RYAR Canvas agency website. Client projects, especially e-commerce stores with custom administration and payments, may require separate hosting and infrastructure.
+
+Implement the FAQ using semantic buttons, appropriate ARIA attributes, keyboard support, and clear expanded/collapsed states.
+
+---
+
+# 17. FOOTER REQUIREMENTS
+
+Create a polished, multi-column footer.
+
+Include:
+
+### Brand Column
+
+- Exact RYAR Canvas logo.
+- Official tagline.
+- Short agency description.
+
+### Services Column
+
+- Website Development.
+- E-commerce Website + Custom Admin Panel.
+- Digital Marketing.
+
+### Explore Column
+
+- Home.
+- Portfolio.
+- Coming Soon.
+- Contact.
+
+### Connect Column
+
+Display only these social platform names:
+
+- WhatsApp
+- Instagram
+
+Use the correct destinations:
+
+WhatsApp:
+[https://wa.me/923497925109](https://wa.me/923497925109)
+
+Instagram:
+[https://www.instagram.com/ryarcanvas/](https://www.instagram.com/ryarcanvas/)
+
+Do not display the raw WhatsApp phone number or Instagram handle as visible text.
+
+### Legal Column
+
+Include links to:
+
+- Privacy Policy.
+- Terms of Service.
+
+Create meaningful legal pages or sections.
+
+Do not use empty links or fake legal content. Provide reasonable starter policies covering the website's actual functions and clearly mark any business-specific legal details that require confirmation.
+
+### Copyright
+
+Display:
+
+"© [CURRENT YEAR] RYAR Canvas. All rights reserved."
+
+Generate the current year dynamically using JavaScript, or maintain it accurately in the HTML.
+
+---
+
+# 18. GET A QUOTE AND CONTACT EXPERIENCE
+
+The main "Get a Quote" CTA must be prominent throughout the site.
+
+Use the following destinations:
+
+- Homepage hero: general inquiry WhatsApp message.
+- Website Development page: website development inquiry.
+- E-commerce page: e-commerce inquiry.
+- Digital Marketing page: marketing inquiry.
+- Custom package cards: custom package inquiry.
+
+A visitor must be able to begin an inquiry from any active service page without searching for the contact details.
+
+Include a small, accessible WhatsApp contact button or floating action button where appropriate.
+
+The floating button must:
+
+- Remain visually unobtrusive.
+- Avoid covering important content or mobile navigation.
+- Have an accessible label.
+- Open the correct WhatsApp conversation.
+- Respect mobile safe areas.
+
+Do not display raw phone numbers in tooltips or visible labels.
+
+---
+
+# 19. RESPONSIVE DESIGN REQUIREMENTS
+
+The website must work correctly on:
+
+- Small mobile phones.
+- Large mobile phones.
+- Tablets.
+- Laptops.
+- Desktop monitors.
+- Wide screens.
+
+Use a mobile-first responsive layout.
+
+Check at representative viewport widths:
+
+- 320px.
+- 375px.
+- 768px.
+- 1024px.
+- 1440px.
+
+Requirements:
+
+- No horizontal scrolling.
+- No clipped buttons.
+- No overlapping text.
+- No distorted logos.
+- No broken navigation.
+- No pricing-card overflow.
+- No inaccessible forms.
+- No oversized images.
+- No fixed-width sections that break mobile layouts.
+
+Use responsive typography and sensible content widths.
+
+On mobile:
+
+- Stack cards vertically.
+- Make important buttons easy to tap.
+- Maintain sufficient spacing.
+- Keep forms simple.
+- Ensure pricing and package information remain readable.
+
+---
+
+# 20. ACCESSIBILITY
+
+Follow practical WCAG 2.2 AA accessibility principles wherever applicable.
+
+Implement:
+
+- Semantic HTML.
+- Proper heading hierarchy.
+- Descriptive image alt text.
+- Accessible navigation.
+- Visible keyboard focus.
+- Keyboard-operable menus and accordions.
+- Correct form labels.
+- Clear validation messages.
+- Adequate text contrast.
+- Appropriate button and link semantics.
+- ARIA attributes where necessary.
+- Reduced-motion support.
+- Meaningful link text.
+
+Do not use a clickable div where a semantic button or anchor is appropriate.
+
+Do not communicate important information through color alone.
+
+Test the site using keyboard navigation.
+
+---
+
+# 21. SEO REQUIREMENTS
+
+Optimize the website for relevant search queries associated with its actual services.
+
+Potential keywords include:
+
+- RYAR Canvas.
+- Website development services.
+- Blog website development.
+- Professional website development.
+- E-commerce website development.
+- Custom e-commerce admin panel.
+- Facebook and Instagram advertising services.
+- Meta Ads management.
+- TikTok Ads services.
+- Digital agency website development.
+
+Use keywords naturally.
+
+Do not engage in keyword stuffing.
+
+## Page Metadata
+
+Create unique:
+
+- Title tags.
+- Meta descriptions.
+- Canonical URLs.
+- Open Graph metadata.
+- Social sharing images where appropriate.
+
+Suggested homepage title:
+
+"RYAR Canvas | Website Development, E-commerce & Digital Marketing"
+
+Suggested homepage description:
+
+"RYAR Canvas helps businesses build professional websites, custom e-commerce stores, and targeted Meta and TikTok advertising campaigns."
+
+Create unique titles and descriptions for every service and coming-soon page.
+
+## Technical SEO
+
+Include:
+
+- robots.txt.
+- sitemap.xml.
+- Correct canonical URLs.
+- Semantic page structure.
+- Descriptive internal links.
+- Optimized image formats.
+- Explicit image dimensions where practical.
+- A working 404 page.
+- Clean URL structures where possible.
+- Appropriate favicon assets.
+- Open Graph metadata.
+
+Use the canonical domain:
+
+[https://riarcanvas.online/](https://riarcanvas.online/)
+
+Do not create duplicate indexable pages with conflicting canonical URLs.
+
+Do not promise Google ranking positions or guaranteed traffic.
+
+If structured data is included, use only information that accurately describes the business.
+
+Do not fabricate:
+
+- Business addresses.
+- Aggregate ratings.
+- Customer reviews.
+- Price ranges not supported by the listed services.
+- Opening hours.
+- Awards.
+
+---
+
+# 22. PERFORMANCE OPTIMIZATION
+
+Optimize the website for fast loading and a smooth user experience.
+
+Requirements:
+
+- Minimize unnecessary JavaScript.
+- Avoid excessive dependencies.
+- Compress images.
+- Use WebP or another appropriate modern image format where feasible.
+- Lazy-load below-the-fold images.
+- Do not lazy-load the primary hero image if that would delay its appearance.
+- Use explicit image dimensions to reduce layout shifts.
+- Avoid unnecessary animation libraries.
+- Minimize layout shifts.
+- Avoid loading multiple font families unnecessarily.
+- Use browser caching where available through static hosting.
+- Avoid large, unnecessary background videos.
+- Ensure all critical assets load correctly over HTTPS.
+
+Aim for strong Core Web Vitals and good Lighthouse results, but do not claim that scores have been achieved until the finished website has actually been tested.
+
+---
+
+# 23. SECURITY AND PRIVACY
+
+The agency website must not collect sensitive payment information.
+
+Do not create fake login pages or payment forms.
+
+Do not place private credentials, API secrets, or administrative passwords in frontend code.
+
+All public contact links must use HTTPS where supported.
+
+For external links that open in a new tab, use appropriate rel attributes.
+
+For email capture:
+
+- Use an external form endpoint or service.
+- Never expose private API keys.
+- Do not claim to save submissions unless a real service confirms successful submission.
+- Provide an understandable privacy notice.
+- Do not collect unnecessary personal information.
+
+For future e-commerce projects, clarify that secure authentication, server-side validation, protected database access, and payment handling must be implemented within the separately agreed client-project architecture.
+
+---
+
+# 24. ANALYTICS AND CONVERSION TRACKING
+
+Structure the website so analytics can be added later without redesigning the application.
+
+Create clear integration points for an optional analytics provider.
+
+Do not add fake tracking statistics.
+
+Do not include tracking identifiers that have not been provided.
+
+If analytics are included, ensure the implementation respects applicable privacy requirements.
+
+Track, when an analytics integration is configured:
+
+- Get a Quote clicks.
+- WhatsApp package selections.
+- Service page visits.
+- Portfolio link clicks.
+- Coming-soon form submissions.
+
+Do not send sensitive personal information through analytics events.
+
+---
+
+# 25. GITHUB PAGES AND CUSTOM DOMAIN CONFIGURATION
+
+The completed project must be compatible with GitHub Pages and the custom domain:
+
+riarcanvas.online
+
+Create a CNAME file containing exactly:
+
+riarcanvas.online
+
+Ensure the CNAME file is located in the published site's root directory.
+
+## Required Deployment Instructions
+
+Create a README.md containing a complete beginner-friendly deployment guide.
+
+Explain the following steps in order.
+
+### Step 1: Create a GitHub Repository
+
+Explain how to create a new public repository for the RYAR Canvas website.
+
+A public repository is suitable for the standard free GitHub Pages workflow.
+
+### Step 2: Upload the Project Files
+
+Explain how to upload the complete website files, including:
+
+- HTML.
+- CSS.
+- JavaScript.
+- Images.
+- CNAME.
+- SEO files.
+- Other required assets.
+
+Explain that the CNAME file must be included in the published output.
+
+### Step 3: Configure GitHub Pages
+
+Explain how to open the repository settings and locate the Pages configuration.
+
+For a simple static project, use the main branch and root directory when appropriate.
+
+If a compiled build or GitHub Actions workflow is used, explain the correct publishing configuration instead.
+
+Do not instruct the user to publish a development directory that omits required assets.
+
+### Step 4: Configure the Custom Domain
+
+Explain how to enter:
+
+riarcanvas.online
+
+in the GitHub Pages custom-domain field.
+
+Explain that DNS changes may take time to propagate.
+
+### Step 5: Configure DNS
+
+Provide clear instructions for configuring the domain's DNS records with the domain registrar or DNS provider.
+
+For a typical GitHub Pages apex-domain configuration, explain the standard A-record destinations:
+
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+
+Explain that these are standard GitHub Pages IPv4 addresses and should be verified against the current official GitHub documentation before use.
+
+Explain that an optional IPv6 configuration may use the currently documented GitHub Pages AAAA records.
+
+For the www subdomain, explain how to configure a CNAME record pointing to the user's actual GitHub Pages hostname, for example:
+
+USERNAME.github.io
+
+Replace USERNAME with the user's real GitHub username.
+
+Do not invent the user's GitHub username.
+
+Explain that the www hostname should be configured only if the user wants it, and that redirects and canonical-domain behavior should be tested after DNS setup.
+
+### Step 6: Enable HTTPS
+
+Explain how to verify the domain in GitHub Pages settings, enable HTTPS when available, and wait for the certificate to become active.
+
+Explain that DNS propagation and certificate provisioning can take time.
+
+### Step 7: Verify the Website
+
+Provide a checklist to test:
+
+- The homepage.
+- All service pages.
+- All coming-soon pages.
+- The exact logo.
+- All images.
+- All WhatsApp links.
+- All Instagram links.
+- All package buttons.
+- Mobile navigation.
+- Contact form behavior.
+- The portfolio link.
+- The 404 page.
+- The custom domain.
+- HTTPS.
+- SEO metadata.
+
+Include Git commands for users who prefer uploading through Git:
+
+git init
+git add .
+git commit -m "Initial RYAR Canvas website"
+git branch -M main
+git remote add origin [https://github.com/USERNAME/REPOSITORY.git](https://github.com/USERNAME/REPOSITORY.git)
+git push -u origin main
+
+Clearly explain that USERNAME and REPOSITORY must be replaced with the user's real GitHub username and repository name.
+
+Do not claim the website is live until deployment and DNS verification have actually been completed.
+
+---
+
+# 26. CONTENT AND DESIGN CONSISTENCY
+
+Across every page, maintain consistent:
+
+- Logo placement.
+- Typography.
+- Color variables.
+- Button styling.
+- Spacing.
+- Navigation.
+- Footer layout.
+- Card design.
+- Border radii.
+- Focus states.
+- Mobile behavior.
+
+Reuse common components and design patterns where practical.
+
+Avoid copy-pasting large blocks of inconsistent code.
+
+Use a shared stylesheet and centralized JavaScript functions.
+
+Keep all package names and prices in one maintainable data structure where possible, so they can be updated without manually changing multiple files.
+
+Maintain a clear separation between:
+
+- Service descriptions.
+- Package data.
+- WhatsApp message generation.
+- Form handling.
+- Navigation behavior.
+- Portfolio project data.
+
+Do not introduce frameworks or dependencies that make a simple static site unnecessarily complicated.
+
+---
+
+# 27. REQUIRED FUNCTIONALITY TESTING
+
+Before declaring the project complete, test the actual implementation.
+
+## Branding
+
+- The uploaded logo is used accurately.
+- The logo does not stretch or distort.
+- Brand colors are consistent.
+- The tagline is displayed correctly.
+
+## Homepage
+
+- The navigation works.
+- Hero CTAs work.
+- Service cards link to their respective pages.
+- No package prices appear on the homepage.
+- Portfolio content displays correctly.
+- Coming-soon cards work.
+- The FAQ accordion functions.
+- Footer links work.
+
+## Website Development
+
+- All six listed package prices are correct.
+- Every package has the correct hosting duration and website quantity.
+- Every package CTA opens WhatsApp.
+- The generated message contains the selected package's actual details.
+- The custom package button opens WhatsApp.
+
+## E-commerce
+
+- All three package prices are correct.
+- The 18-month/24-month ambiguity is preserved and clarified.
+- The custom package button works.
+- The no-mandatory-monthly-Shopify-subscription message is accurate.
+- No unsupported technical or commercial promises appear.
+
+## Digital Marketing
+
+- Only Meta Ads and TikTok Ads are offered.
+- No Google Ads service is advertised.
+- The WhatsApp inquiry message is correct.
+- No unsupported marketing guarantees appear.
+
+## Coming Soon
+
+- All three pages load.
+- Email inputs validate correctly.
+- Form submission behavior matches the actual configuration.
+- Unconfigured forms do not pretend to save emails.
+- The WhatsApp alternative works.
+
+## Portfolio
+
+- Design Bench is the only active project.
+- The correct URL is used.
+- The project thumbnail is relevant.
+- The external link opens correctly.
+- No broken or fake portfolio cards appear.
+
+## Technical
+
+- All files load without errors.
+- All internal links resolve correctly.
+- All scripts execute without console errors.
+- All images load.
+- The website works on mobile and desktop.
+- The site does not require a backend.
+- GitHub Pages deployment settings are documented.
+- The CNAME file contains the correct domain.
+- No secrets are exposed.
+- No external dependency is silently required for essential functionality.
+
+If browser testing tools are available, test the website using them. Otherwise, provide a manual testing checklist and clearly identify anything that could not be verified.
+
+---
+
+# 28. REQUIRED FINAL DELIVERABLES
+
+When finished, provide the following deliverables.
+
+### Deliverable A: Complete Website
+
+Generate the actual, complete static website files.
+
+Do not stop after generating the homepage or a design preview.
+
+Include every page, stylesheet, script, image asset that can be created, configuration file, and required supporting document.
+
+### Deliverable B: Project Structure
+
+Show the complete folder and file structure.
+
+Explain the purpose of the important files.
+
+### Deliverable C: Logo Integration
+
+Confirm which uploaded logo asset was used.
+
+If exact logo extraction was not technically possible, explain the limitation and preserve the original image.
+
+### Deliverable D: Functional Integrations
+
+Explain how:
+
+- WhatsApp links are generated.
+- Package-specific details are inserted into messages.
+- The portfolio is populated.
+- Coming-soon email capture is configured.
+- Forms behave when no endpoint is available.
+
+### Deliverable E: Deployment Guide
+
+Provide complete GitHub Pages and custom-domain setup instructions.
+
+Include the CNAME requirement, DNS setup, HTTPS activation, and Git commands.
+
+### Deliverable F: Final Testing Report
+
+Summarize:
+
+- Implemented features.
+- Tested interactions.
+- Confirmed package prices.
+- Responsive behavior.
+- SEO configuration.
+- Remaining configuration tasks.
+- Any limitations that require external services.
+
+Do not state that an item has been tested unless it actually has been tested.
+
+### Deliverable G: Easy Future Editing
+
+Explain how I can:
+
+- Update the WhatsApp number.
+- Change package prices.
+- Update service descriptions.
+- Add portfolio projects.
+- Replace the logo.
+- Update social links.
+- Connect the email-capture service.
+- Change the brand colors.
+
+Make these updates straightforward and document the relevant file locations.
+
+---
+
+# 29. FINAL ACCEPTANCE CRITERIA
+
+The project is complete only when all of the following conditions are met:
+
+1. The website has a coherent, premium RYAR Canvas brand identity.
+2. The exact supplied logo is used appropriately.
+3. The homepage does not display package prices.
+4. All three active services have dedicated pages.
+5. Website development contains all six specified packages with the correct prices.
+6. E-commerce contains all three specified packages with the correct prices.
+7. The ambiguous $189 e-commerce hosting duration is explicitly clarified through WhatsApp.
+8. Digital marketing offers Meta Ads and TikTok Ads only.
+9. Every package and inquiry button opens WhatsApp with an appropriate prefilled message.
+10. No raw phone number or Instagram handle is displayed as visible header or footer social text.
+11. The Design Bench portfolio project links to [https://designbench.netlify.app](https://designbench.netlify.app).
+12. Other portfolio projects remain empty rather than fabricated.
+13. All three coming-soon pages exist.
+14. Email capture never falsely claims to store a submission.
+15. The site runs without a custom backend.
+16. The project is suitable for GitHub Pages.
+17. The custom domain is configured through the CNAME file and documented DNS instructions.
+18. The website is responsive and accessible.
+19. SEO and performance best practices are implemented.
+20. The complete source files and deployment documentation are delivered.
+
+## FINAL INSTRUCTION
+
+Begin by examining the uploaded RYAR Canvas logo and planning the project architecture.
+
+Then build the complete website.
+
+Do not stop at planning, describing the design, or presenting a sample homepage.
+
+Prioritize working functionality, accurate business information, visual consistency, transparent service descriptions, maintainable code, and a straightforward deployment process.
+
+If a missing detail genuinely prevents implementation, use the safest reasonable default, document the assumption, and continue. Do not invent business information, credentials, integrations, customer testimonials, or technical capabilities.
+
+The final result should be a polished, professional, functional, GitHub Pages-compatible digital agency website that RYAR Canvas can confidently customize and publish.

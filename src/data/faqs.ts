@@ -6,10 +6,28 @@ export interface FAQItem {
 
 export const FAQS: FAQItem[] = [
   {
+    id: "faq-shopify-monthly-fees",
+    question: "Do I need to pay any monthly fees for the E-commerce store?",
+    answer:
+      "No, it's a secure one-time payment with zero monthly Shopify fees! You own your platform without mandatory recurring platform subscriptions.",
+  },
+  {
+    id: "faq-delivery-handover-timeline",
+    question: "How long does delivery take?",
+    answer:
+      "Handover takes 1–3 weeks for website development and 2–5 weeks for an e-commerce website with custom admin panel.",
+  },
+  {
+    id: "faq-get-started",
+    question: "How do we get started?",
+    answer:
+      "Simply select your package and click to chat directly via WhatsApp (+92 349 7925109). We'll confirm your requirements, timeline, and next steps immediately.",
+  },
+  {
     id: "faq-services",
     question: "What services does RYAR Canvas provide?",
     answer:
-      "RYAR Canvas provides website development, e-commerce website development with a custom admin panel, and digital marketing focused on Meta Ads (Facebook & Instagram) and TikTok Ads. Additional solutions, including an AI Calling Agent, Automated Lead Gen Pipeline, and Ryar Canvas Academy, are currently in preparation.",
+      "RYAR Canvas provides website development (best for blogging with domain, hosting, development, and ads setup), e-commerce website development with a custom admin panel (one-time payment, no monthly Shopify fees), and digital marketing focused strictly on Meta Ads (Facebook & Instagram) and TikTok Ads.",
   },
   {
     id: "faq-ordering",
@@ -28,12 +46,6 @@ export const FAQS: FAQItem[] = [
     question: "Are website development packages billed monthly?",
     answer:
       "No. The listed prices are one-time package prices in USD covering development and the specified hosting duration (e.g. 12, 24, or 48 months). They are not recurring monthly subscription fees. Inclusions and hosting renewal terms are confirmed before payment.",
-  },
-  {
-    id: "faq-shopify-subscription",
-    question: "Does the e-commerce service require monthly Shopify subscription payments?",
-    answer:
-      "The proposed custom e-commerce solution is designed to avoid mandatory recurring monthly Shopify platform subscriptions through a one-time development model. Standard external costs, such as domain renewal, hosting renewal after the included term, payment gateway processing charges, third-party integrations, and optional maintenance, may still apply.",
   },
   {
     id: "faq-adsense-guarantee",

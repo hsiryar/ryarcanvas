@@ -1,5 +1,6 @@
 import React from "react";
 import { buildWhatsAppUrl, WHATSAPP_MESSAGES } from "../utils/whatsapp";
+import { TrustGuaranteesBar } from "../components/TrustGuaranteesBar";
 import {
   TrendingUp,
   Target,
@@ -22,16 +23,22 @@ export const DigitalMarketingView: React.FC = () => {
     <div className="space-y-16 sm:space-y-24 py-8 sm:py-12">
       {/* Hero Header */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#324BB0]">
-          <TrendingUp className="w-4 h-4" />
-          <span>Paid Advertising Management</span>
+        <div className="flex flex-wrap items-center justify-center gap-2">
+          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#324BB0] bg-blue-50 px-3 py-1 rounded-full border border-blue-200/60">
+            <TrendingUp className="w-4 h-4" />
+            <span>Paid Advertising Management</span>
+          </div>
+          <div className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-200/60">
+            <span>Meta Ads & TikTok Ads Only</span>
+          </div>
         </div>
+
         <h1 className="text-3xl sm:text-5xl font-extrabold text-[#181D28] tracking-tight">
           Reach the Right Audience. <br />
           <span className="brand-gradient-text">Create More Opportunities.</span>
         </h1>
         <p className="text-base sm:text-lg text-[#5B6275] max-w-2xl mx-auto leading-relaxed">
-          RYAR Canvas helps businesses plan, launch, and improve paid advertising campaigns across Facebook, Instagram, and TikTok.
+          RYAR Canvas provides high-performance paid advertising campaigns. Our services focus <strong>strictly on Meta Ads (Facebook & Instagram) and TikTok Ads (strictly no Google ads)</strong>, backed by direct WhatsApp strategy consultations.
         </p>
 
         {/* Primary CTA */}
@@ -47,6 +54,9 @@ export const DigitalMarketingView: React.FC = () => {
           </a>
         </div>
       </section>
+
+      {/* Trust & Commitments Bar */}
+      <TrustGuaranteesBar />
 
       {/* Two Supported Platforms Grid */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

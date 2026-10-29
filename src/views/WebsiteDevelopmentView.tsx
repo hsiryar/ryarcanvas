@@ -1,6 +1,7 @@
 import React from "react";
 import { WEBSITE_PACKAGES, WebsitePackage } from "../data/packages";
 import { buildWhatsAppUrl, WHATSAPP_MESSAGES } from "../utils/whatsapp";
+import { TrustGuaranteesBar } from "../components/TrustGuaranteesBar";
 import {
   Globe,
   CheckCircle2,
@@ -10,6 +11,7 @@ import {
   Server,
   Code2,
   Sparkles,
+  Clock,
 } from "lucide-react";
 
 export const WebsiteDevelopmentView: React.FC = () => {
@@ -22,6 +24,7 @@ export const WebsiteDevelopmentView: React.FC = () => {
         price: pkg.price,
         duration: pkg.duration,
         websiteCount: pkg.websiteCount,
+        timeline: pkg.timeline,
       })
     );
   };
@@ -30,25 +33,40 @@ export const WebsiteDevelopmentView: React.FC = () => {
     <div className="space-y-16 sm:space-y-24 py-8 sm:py-12">
       {/* Hero Header */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#324BB0]">
-          <Globe className="w-4 h-4" />
-          <span>Website Development Service</span>
+        <div className="flex flex-wrap items-center justify-center gap-2">
+          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#324BB0] bg-blue-50 px-3 py-1 rounded-full border border-blue-200/60">
+            <Globe className="w-4 h-4" />
+            <span>Website Development Service</span>
+          </div>
+          <div className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200/60">
+            <Clock className="w-3.5 h-3.5" />
+            <span>Handover: 1 to 3 weeks</span>
+          </div>
         </div>
+
         <h1 className="text-3xl sm:text-5xl font-extrabold text-[#181D28] tracking-tight">
           Build Your Website. <br />
           <span className="brand-gradient-text">Grow Your Digital Presence.</span>
         </h1>
         <p className="text-base sm:text-lg text-[#5B6275] max-w-2xl mx-auto leading-relaxed">
-          We help bloggers, publishers, creators, and businesses launch professional websites with domain-related setup, hosting packages, website development, and advertising-code setup guidance.
+          Best for blogging, content brands, and online publishers. Includes domain-related setup, high-performance hosting packages, website development, and advertising-code setup guidance with a fast <strong>1 to 3 weeks handover timeline</strong>.
         </p>
       </section>
+
+      {/* Trust & Commitments Bar */}
+      <TrustGuaranteesBar />
 
       {/* Scope & Transparency Notice */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-slate-50 border border-[#E2E8F0] rounded-2xl p-6 sm:p-8 space-y-4">
-          <div className="flex items-center gap-2 text-sm font-bold text-[#181D28]">
-            <ShieldCheck className="w-5 h-5 text-[#324BB0]" />
-            <span>Important Scope & Transparency Details</span>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 text-sm font-bold text-[#181D28]">
+              <ShieldCheck className="w-5 h-5 text-[#324BB0]" />
+              <span>Important Scope & Transparency Details</span>
+            </div>
+            <span className="text-xs font-semibold text-[#324BB0] bg-blue-50 px-2.5 py-1 rounded-md hidden sm:inline-block">
+              Handover: 1 to 3 weeks
+            </span>
           </div>
 
           <p className="text-xs sm:text-sm text-[#5B6275] leading-relaxed">
@@ -61,8 +79,9 @@ export const WebsiteDevelopmentView: React.FC = () => {
                 What is Included in Scope:
               </span>
               <ul className="space-y-1 text-xs text-[#5B6275]">
-                <li>• Website development tailored to your content & niche</li>
-                <li>• High-performance hosting for the selected duration</li>
+                <li>• Rapid 1 to 3 weeks complete delivery and handover</li>
+                <li>• Website development tailored for blogging & content</li>
+                <li>• High-performance hosting for the selected duration (12–48 mo)</li>
                 <li>• Domain-related setup guidance or registration where agreed</li>
                 <li>• Technical advertising-code placement guidance</li>
                 <li>• Pre-launch quality verification and launch guidance</li>
@@ -91,7 +110,7 @@ export const WebsiteDevelopmentView: React.FC = () => {
             Website Development Packages
           </h2>
           <p className="text-xs sm:text-sm text-[#5B6275]">
-            Transparent package rates in USD. Select a package below to discuss your exact requirements and launch timeline on WhatsApp.
+            Transparent package rates in USD. 1 to 3 weeks delivery. Select a package below to discuss your exact requirements and launch timeline on WhatsApp.
           </p>
         </div>
 
@@ -108,8 +127,9 @@ export const WebsiteDevelopmentView: React.FC = () => {
                     <span className="text-xs font-bold text-[#324BB0] bg-blue-50 px-2.5 py-1 rounded-md">
                       {pkg.duration} Hosting
                     </span>
-                    <span className="text-xs font-semibold text-[#5B6275]">
-                      {pkg.websiteCount} {pkg.websiteCount === 1 ? "Website" : "Websites"}
+                    <span className="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">
+                      <Clock className="w-3 h-3" />
+                      <span>{pkg.timeline}</span>
                     </span>
                   </div>
 

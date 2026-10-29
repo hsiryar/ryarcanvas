@@ -4,6 +4,7 @@ import { FAQS } from "../data/faqs";
 import { PORTFOLIO_PROJECTS } from "../data/portfolio";
 import { buildWhatsAppUrl, WHATSAPP_MESSAGES } from "../utils/whatsapp";
 import { NavView } from "../components/Header";
+import { TrustGuaranteesBar } from "../components/TrustGuaranteesBar";
 import {
   Globe,
   ShoppingBag,
@@ -19,6 +20,7 @@ import {
   Sparkles,
   ShieldCheck,
   Clock,
+  Timer,
   Compass,
 } from "lucide-react";
 
@@ -30,6 +32,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
   const heroQuoteWhatsAppUrl = buildWhatsAppUrl(WHATSAPP_MESSAGES.heroQuote());
+  const marketingWhatsAppUrl = buildWhatsAppUrl(WHATSAPP_MESSAGES.digitalMarketing());
 
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
@@ -222,6 +225,9 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
         </div>
       </section>
 
+      {/* TRUST BADGES & QUALITY GUARANTEES BAR */}
+      <TrustGuaranteesBar />
+
       {/* 2. TRUST & VALUE PROPOSITIONS */}
       <section className="bg-[#F8FAFC] border-y border-[#E2E8F0] py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -246,19 +252,19 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
                 No Mandatory Monthly Lock-In
               </h3>
               <p className="text-xs text-[#5B6275] leading-relaxed">
-                One-time development model for online stores without forced monthly platform fees.
+                One-time development model for online stores with zero monthly Shopify platform subscription fees.
               </p>
             </div>
 
             <div className="space-y-2">
               <div className="w-10 h-10 rounded-xl bg-indigo-50 text-[#324BB0] flex items-center justify-center">
-                <ShieldCheck className="w-5 h-5" />
+                <Timer className="w-5 h-5" />
               </div>
               <h3 className="font-bold text-sm text-[#181D28]">
-                Transparent Scope & Terms
+                100% On-Time Handover
               </h3>
               <p className="text-xs text-[#5B6275] leading-relaxed">
-                Inclusions, hosting terms, and technical details are confirmed before you make any payment.
+                Guaranteed 1–3 weeks for websites and 2–5 weeks for custom e-commerce stores.
               </p>
             </div>
 
@@ -270,7 +276,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
                 Direct WhatsApp Communication
               </h3>
               <p className="text-xs text-[#5B6275] leading-relaxed">
-                Speak directly with our team to align on specifications, timelines, and next steps.
+                Instant scoping and consultation directly with our engineering team at +92 349 7925109.
               </p>
             </div>
           </div>
@@ -287,7 +293,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
             Tailored Digital Services
           </h2>
           <p className="text-sm sm:text-base text-[#5B6275]">
-            Explore our specialized development and advertising services. Click any service to view full specifications and package details.
+            Explore our specialized development and advertising services. Click any service to view full specifications, package tiers, and scope details.
           </p>
         </div>
 
@@ -295,31 +301,40 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
           {/* Card 1: Website Development */}
           <div className="bg-white border border-[#E2E8F0] rounded-2xl p-7 flex flex-col justify-between brand-card-hover">
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#324BB0] flex items-center justify-center">
-                <Globe className="w-6 h-6" />
+              <div className="flex items-center justify-between">
+                <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#324BB0] flex items-center justify-center">
+                  <Globe className="w-6 h-6" />
+                </div>
+                <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#324BB0] bg-blue-50 border border-blue-200/60 px-2.5 py-1 rounded-md">
+                  <Clock className="w-3.5 h-3.5" />
+                  <span>1 to 3 weeks</span>
+                </span>
               </div>
+
               <h3 className="text-xl font-bold text-[#181D28]">
                 Website Development
               </h3>
               <p className="text-sm text-[#5B6275] leading-relaxed">
                 Launch a professional website for your blog, content brand, or
-                online project. Choose a hosting package that fits your plans,
-                with domain-related setup, website development, and
-                advertising-code setup guidance.
+                online project. Handover timeline is <strong>1 to 3 weeks</strong>. Best for blogging, includes domain, hosting, development, and ads code setup/guidance.
               </p>
 
               <div className="pt-2 border-t border-[#E2E8F0]/80 space-y-2">
                 <div className="flex items-center gap-2 text-xs text-[#5B6275]">
                   <CheckCircle2 className="w-4 h-4 text-[#324BB0]" />
-                  <span>1 to 10 websites packages</span>
+                  <span>Handover timeline: 1 to 3 weeks</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-[#5B6275]">
                   <CheckCircle2 className="w-4 h-4 text-[#324BB0]" />
-                  <span>12 to 48 months hosting included</span>
+                  <span>Best for blogging & content brands</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-[#5B6275]">
                   <CheckCircle2 className="w-4 h-4 text-[#324BB0]" />
-                  <span>Advertising-code setup guidance</span>
+                  <span>Domain, hosting & ads code setup guidance</span>
+                </div>
+                <div className="flex items-center gap-2 text-xs text-[#5B6275]">
+                  <CheckCircle2 className="w-4 h-4 text-[#324BB0]" />
+                  <span>Packages from 1 to 10 websites (12–48 mo hosting)</span>
                 </div>
               </div>
             </div>
@@ -338,31 +353,40 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
           {/* Card 2: E-commerce Website + Custom Admin Panel */}
           <div className="bg-white border border-[#E2E8F0] rounded-2xl p-7 flex flex-col justify-between brand-card-hover relative">
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-xl bg-purple-50 text-[#7E33B8] flex items-center justify-center">
-                <ShoppingBag className="w-6 h-6" />
+              <div className="flex items-center justify-between">
+                <div className="w-12 h-12 rounded-xl bg-purple-50 text-[#7E33B8] flex items-center justify-center">
+                  <ShoppingBag className="w-6 h-6" />
+                </div>
+                <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#7E33B8] bg-purple-50 border border-purple-200/60 px-2.5 py-1 rounded-md">
+                  <Clock className="w-3.5 h-3.5" />
+                  <span>2 to 5 weeks</span>
+                </span>
               </div>
+
               <h3 className="text-xl font-bold text-[#181D28]">
                 E-commerce Website + Custom Admin Panel
               </h3>
               <p className="text-sm text-[#5B6275] leading-relaxed">
-                Build a professional online store with a custom administration
-                experience to manage your products and orders. Avoid mandatory
-                monthly Shopify platform subscription fees through our one-time
-                website development pricing structure.
+                Build a superior online store with a custom administration
+                experience to manage your products and orders. Handover timeline is <strong>2 to 5 weeks</strong>. Explicitly <strong>NO monthly Shopify fees</strong> or recurring subscription costs (secure one-time payment).
               </p>
 
               <div className="pt-2 border-t border-[#E2E8F0]/80 space-y-2">
                 <div className="flex items-center gap-2 text-xs text-[#5B6275]">
                   <CheckCircle2 className="w-4 h-4 text-[#7E33B8]" />
-                  <span>Custom product & order admin panel</span>
+                  <span>Handover timeline: 2 to 5 weeks</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-[#5B6275]">
                   <CheckCircle2 className="w-4 h-4 text-[#7E33B8]" />
-                  <span>No mandatory monthly Shopify subscription</span>
+                  <span>ZERO monthly Shopify fees (One-time payment)</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-[#5B6275]">
                   <CheckCircle2 className="w-4 h-4 text-[#7E33B8]" />
-                  <span>12 to 48 months hosting packages</span>
+                  <span>Custom product & order management admin panel</span>
+                </div>
+                <div className="flex items-center gap-2 text-xs text-[#5B6275]">
+                  <CheckCircle2 className="w-4 h-4 text-[#7E33B8]" />
+                  <span>12, 18/24, or 48 months included hosting</span>
                 </div>
               </div>
             </div>
@@ -381,41 +405,58 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
           {/* Card 3: Digital Marketing */}
           <div className="bg-white border border-[#E2E8F0] rounded-2xl p-7 flex flex-col justify-between brand-card-hover">
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-xl bg-indigo-50 text-[#324BB0] flex items-center justify-center">
-                <TrendingUp className="w-6 h-6" />
+              <div className="flex items-center justify-between">
+                <div className="w-12 h-12 rounded-xl bg-indigo-50 text-[#324BB0] flex items-center justify-center">
+                  <TrendingUp className="w-6 h-6" />
+                </div>
+                <span className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200/60 px-2.5 py-1 rounded-md">
+                  <span>Meta & TikTok</span>
+                </span>
               </div>
+
               <h3 className="text-xl font-bold text-[#181D28]">
                 Digital Marketing
               </h3>
               <p className="text-sm text-[#5B6275] leading-relaxed">
-                Reach your target audience and generate business opportunities
-                through focused Facebook, Instagram, and TikTok advertising
-                campaigns.
+                Reach your target audience and generate business opportunities. Services focus strictly on <strong>Meta Ads (Facebook/Instagram)</strong> and <strong>TikTok Ads</strong> (strictly no Google ads).
               </p>
 
               <div className="pt-2 border-t border-[#E2E8F0]/80 space-y-2">
                 <div className="flex items-center gap-2 text-xs text-[#5B6275]">
                   <CheckCircle2 className="w-4 h-4 text-[#324BB0]" />
-                  <span>Meta Ads (Facebook & Instagram)</span>
+                  <span>Meta Ads (Facebook & Instagram targeting)</span>
+                </div>
+                <div className="flex items-center gap-2 text-xs text-[#324BB0]">
+                  <CheckCircle2 className="w-4 h-4 text-[#324BB0]" />
+                  <span>TikTok Ads creative production & setup</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-[#5B6275]">
                   <CheckCircle2 className="w-4 h-4 text-[#324BB0]" />
-                  <span>TikTok Ads creative & setup</span>
+                  <span>Strictly no Google Ads (focused specialism)</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-[#5B6275]">
                   <CheckCircle2 className="w-4 h-4 text-[#324BB0]" />
-                  <span>Audience strategy & performance reviews</span>
+                  <span>Direct consultation via WhatsApp</span>
                 </div>
               </div>
             </div>
 
-            <div className="pt-6">
+            <div className="pt-6 space-y-2.5">
+              <a
+                href={marketingWhatsAppUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl brand-gradient text-white font-semibold text-sm hover:opacity-95 shadow-xs transition-opacity"
+              >
+                <MessageSquare className="w-4 h-4" />
+                <span>Chat on WhatsApp</span>
+              </a>
               <button
                 onClick={() => onNavigate("service-marketing")}
-                className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm transition-colors"
+                className="w-full inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl border border-[#E2E8F0] hover:bg-slate-50 text-[#181D28] font-medium text-xs transition-colors"
               >
-                <span>Explore Digital Marketing</span>
-                <ArrowRight className="w-4 h-4" />
+                <span>View Marketing Strategy</span>
+                <ArrowRight className="w-3.5 h-3.5 text-[#5B6275]" />
               </button>
             </div>
           </div>

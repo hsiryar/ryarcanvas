@@ -22,30 +22,34 @@ export const WHATSAPP_MESSAGES = {
     price: number;
     duration: string;
     websiteCount: number;
+    timeline?: string;
   }) =>
-    `Hello RYAR Canvas! I'm interested in the Website Development service.
+    `Hello RYAR Canvas! I'm interested in the Website Development service (best for blogging, with domain, hosting, development, and ads code setup).
 
 Selected Package: ${params.packageName}
 Package Price: $${params.price} USD
 Hosting Duration: ${params.duration}
 Number of Websites: ${params.websiteCount}
+Handover Timeline: ${params.timeline || "1 to 3 weeks"}
 
-Please confirm the package inclusions, domain and hosting terms, estimated delivery time, and the next steps.`,
+Please confirm the package inclusions, domain and hosting setup, delivery timeline, and the next steps.`,
 
   // Custom Website Package
   websiteCustom: () =>
-    "Hello RYAR Canvas! I'd like a custom website package. Please help me choose the right solution. My requirements are:",
+    "Hello RYAR Canvas! I'd like a custom website development package (1 to 3 weeks handover). Please help me choose the right solution. My requirements are:",
 
   // E-commerce Package
   ecommercePackage: (params: {
     packageName: string;
     price: number;
+    timeline?: string;
     durationNote?: string;
   }) => {
-    let message = `Hello RYAR Canvas! I'm interested in your E-commerce Website + Custom Admin Panel service.
+    let message = `Hello RYAR Canvas! I'm interested in your E-commerce Website + Custom Admin Panel service (One-Time Payment, NO monthly Shopify fees or recurring subscriptions).
 
 Selected Package: ${params.packageName}
-Package Price: $${params.price} USD`;
+Package Price: $${params.price} USD
+Handover Timeline: ${params.timeline || "2 to 5 weeks"}`;
 
     if (params.durationNote) {
       message += `\nPreferred Duration: ${params.durationNote}`;
@@ -57,11 +61,11 @@ Package Price: $${params.price} USD`;
 
   // Custom E-commerce Package
   ecommerceCustom: () =>
-    "Hello RYAR Canvas! I'd like a custom e-commerce solution. Please help me choose the right solution for my online store and admin panel. My requirements are:",
+    "Hello RYAR Canvas! I'd like a custom e-commerce solution with custom admin panel and NO monthly Shopify platform fees (2 to 5 weeks handover). Please help me choose the right solution. My requirements are:",
 
   // Digital Marketing Inquiry
   digitalMarketing: () =>
-    "Hello RYAR Canvas! I'm interested in your Digital Marketing services for Meta Ads (Facebook/Instagram) and TikTok Ads. I'd like to discuss my business goals, target audience, campaign requirements, and pricing.",
+    "Hello RYAR Canvas! I'm interested in your Digital Marketing services for Meta Ads (Facebook/Instagram) and TikTok Ads (no Google ads). I'd like to discuss my business goals, target audience, campaign requirements, and pricing.",
 
   // Coming Soon Early Access
   comingSoon: (serviceName: string) =>

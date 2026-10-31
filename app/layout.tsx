@@ -1,0 +1,6 @@
+import type {Metadata} from 'next';
+import Script from 'next/script';
+import './extra.css';
+const base=process.env.NEXT_PUBLIC_BASE_PATH || '';
+export const metadata:Metadata={metadataBase:new URL('https://riarcanvas.online'),title:'RYAR Canvas',description:'Website development, e-commerce and digital marketing.',icons:{icon:`${base}/favicon.ico`},alternates:{types:{'application/rss+xml':'https://riarcanvas.online/rss.xml'}}};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><head><link rel="stylesheet" href={`${base}/assets/css/tailwind.css`}/><link rel="stylesheet" href={`${base}/assets/css/styles.css`}/><link rel="stylesheet" href={`${base}/assets/css/theme.css`}/><noscript><style>{`@media(max-width:767px){.site-header{height:auto;position:relative}.nav-wrap{flex-wrap:wrap;padding-block:12px}.menu-toggle{display:none}.site-header nav{display:flex;position:static;box-shadow:none;width:100%;padding:0}}`}</style></noscript></head><body>{children}<Script src={`${base}/js/main.js`} strategy="afterInteractive"/><Script src={`${base}/js/portfolio.js`} strategy="afterInteractive"/><Script src={`${base}/js/forms.js`} strategy="afterInteractive"/></body></html>}

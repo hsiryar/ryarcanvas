@@ -1,8 +1,9 @@
 node_modules/
-build/
-dist/
-coverage/
-.DS_Store
-*.log
-.env*
-!.env.example
+.next/
+out/
+.env
+.env.local
+.env.*.local
+*.tsbuildinfo
+content/posts.generated.json
+app/blog/[[]slug[]]/page.tsx

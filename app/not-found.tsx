@@ -1,0 +1,2 @@
+import Shell from '../components/Shell';
+export default function NotFound(){return <Shell><section className="not-found container"><div className="eyebrow"><span className="eyebrow-dot"/>404 / PAGE NOT FOUND</div><h1>Looks like this idea<br/><em>took a wrong turn.</em></h1><p>The page you’re looking for isn’t here.</p><a className="btn btn-primary" href="https://riarcanvas.online/">Back to Home ↗</a></section></Shell>}

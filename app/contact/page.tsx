@@ -1,0 +1,6 @@
+import Shell from '../../components/Shell';
+import ContactForm from '../../components/ContactForm';
+import {pageMetadata} from '../../lib/metadata';
+export const metadata=pageMetadata('Contact RYAR Canvas | Start a Conversation','Contact RYAR Canvas about website development, e-commerce, and digital marketing.','/contact.html');
+const whatsapp='https://wa.me/923497925109?text='+encodeURIComponent('Hello RYAR Canvas! I visited your website and would like to discuss your services. Please guide me through the available options.');
+export default function Contact(){return <Shell><section className="section"><div className="container contact-grid"><div><div className="eyebrow"><span className="eyebrow-dot"/>LET’S TALK</div><h1>Good ideas start<br/><em>with a hello.</em></h1><p className="section-copy">Tell us a little about your project. We’ll help you explore the right way forward.</p><div className="button-row"><a className="btn btn-primary" href={whatsapp}>Chat on WhatsApp ↗</a><a className="btn btn-outline" href="https://www.instagram.com/ryarcanvas/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div><p className="form-hint" style={{marginTop:'25px'}}>No account or signup required.</p></div><ContactForm/></div></section></Shell>}

@@ -1,0 +1,17 @@
+{
+ "whatsapp":"923497925109",
+ "instagram":"https://www.instagram.com/ryarcanvas/",
+ "website_packages":[
+  {"name":"12 Months Hosting + 1 Website","price":99,"duration":"12 Months","quantity":"1","description":"Suitable for launching one website with a 12-month hosting package."},
+  {"name":"12 Months Hosting + 2 Websites","price":139,"duration":"12 Months","quantity":"2","description":"A flexible option for managing two websites with 12 months of hosting."},
+  {"name":"24 Months Hosting + 1 Website","price":129,"duration":"24 Months","quantity":"1","description":"Extended hosting coverage for one website over 24 months."},
+  {"name":"24 Months Hosting + 3 Websites","price":189,"duration":"24 Months","quantity":"3","description":"An option for launching up to three websites with 24 months of hosting."},
+  {"name":"48 Months Hosting + 5 Websites","price":239,"duration":"48 Months","quantity":"5","description":"Longer-term hosting for a portfolio of up to five websites."},
+  {"name":"48 Months Hosting + 10 Websites","price":299,"duration":"48 Months","quantity":"10","description":"An expanded option for managing up to ten websites with 48 months of hosting."}
+ ],
+ "ecommerce_packages":[
+  {"name":"12 Months Hosting","price":129,"duration":"12 Months","description":"A one-time website development package with 12 months of hosting included, subject to the confirmed project scope."},
+  {"name":"18 Months / 24 Months Hosting","price":189,"duration":"18 Months / 24 Months","description":"An extended hosting package. Confirm whether the intended hosting duration is 18 or 24 months before ordering."},
+  {"name":"48 Months Hosting","price":199,"duration":"48 Months","description":"A longer hosting package for your online store, with the exact included features and service scope confirmed before payment."}
+ ]
+}

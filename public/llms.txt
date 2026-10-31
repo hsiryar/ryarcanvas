@@ -2,12 +2,12 @@
 
 > RYAR Canvas is a digital agency offering website development, e-commerce website development with a custom admin panel, and paid advertising services focused on Meta Ads and TikTok Ads.
 
-- [Home](https://riarcanvas.online/): Agency overview and portfolio.
-- [Website development](https://riarcanvas.online/services/website-development.html): Hosting and website packages.
-- [E-commerce development](https://riarcanvas.online/services/ecommerce-development.html): E-commerce and custom admin panel services.
-- [Digital marketing](https://riarcanvas.online/services/digital-marketing.html): Meta and TikTok advertising services.
-- [Blog](https://riarcanvas.online/blog.html): Published agency articles.
-- [Contact](https://riarcanvas.online/contact.html): Contact options.
-- [Sitemap](https://riarcanvas.online/sitemap.xml): Public URLs.
+- [Home](https://ryarcanvas.online/): Agency overview and portfolio.
+- [Website development](https://ryarcanvas.online/services/website-development.html): Hosting and website packages.
+- [E-commerce development](https://ryarcanvas.online/services/ecommerce-development.html): E-commerce and custom admin panel services.
+- [Digital marketing](https://ryarcanvas.online/services/digital-marketing.html): Meta and TikTok advertising services.
+- [Blog](https://ryarcanvas.online/blog.html): Published agency articles.
+- [Contact](https://ryarcanvas.online/contact.html): Contact options.
+- [Sitemap](https://ryarcanvas.online/sitemap.xml): Public URLs.
 
 AI Calling Agent, Automated Lead Gen Pipeline, and Ryar Canvas Academy are upcoming initiatives; features are not guaranteed. Package terms and scope must be confirmed before payment.

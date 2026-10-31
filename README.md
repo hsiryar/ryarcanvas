@@ -4,7 +4,7 @@ Next.js static export for GitHub Pages. This repository contains the public site
 
 ## Status and domain
 
-The existing `main` branch and currently configured Pages domain are not changed by this branch. The website code uses **https://riarcanvas.online/** for its canonical URLs, sitemap, RSS, Open Graph and `public/CNAME`, as requested in the original brief. The current GitHub Pages settings reported **https://ryarcanvas.online/** instead. **Do not merge/deploy until the owner confirms the canonical domain** and DNS, `CNAME`, metadata and Pages settings have been aligned. Changing a Pages custom domain can interrupt the existing live site.
+The existing `main` branch and currently configured Pages domain are not changed by this branch. The owner confirmed **https://ryarcanvas.online/** as the official domain; this branch uses it for canonical URLs, sitemap, RSS, Open Graph and `public/CNAME`. Do not merge/deploy until the backend and GitHub Pages Actions secrets are ready. Merging with the current branch-based Pages source may interrupt the existing site.
 
 ## Local build
 
@@ -22,7 +22,7 @@ The prebuild sync reads published posts from `DATABASE_URL` (Neon) in the shell.
 
 1. In the backend repository, create the Neon schema, deploy the backend and configure authentication, SMTP and rebuild credentials. No account signup is exposed to visitors.
 2. In this repository, set Actions secret `NEON_DATABASE_URL` (prefer read-only access to published posts) and Actions variable `NEXT_PUBLIC_API_URL` to the public backend HTTPS URL, without trailing slash. The workflow intentionally fails when the database secret is missing, to avoid silently publishing an empty blog.
-3. Confirm the official domain spelling and ensure `public/CNAME`, `lib/metadata.ts`, `lib/posts.ts`, `scripts/sync-posts.mjs`, `public/robots.txt`, `public/llms.txt`, `app/layout.tsx` and homepage structured data use the same URL. Update GitHub Pages and DNS only after confirmation.
+3. The confirmed domain is `ryarcanvas.online`. Ensure Pages settings, DNS, `public/CNAME`, canonical URLs and metadata stay consistent. Do not change DNS unless needed and verified.
 4. In GitHub Settings → Pages set source to **GitHub Actions** when ready to replace the existing site. Merge the reviewed frontend branch to `main`; check Actions, TLS, all service links, contact form, blog, metadata, and redirects. Do not switch the existing Pages source until you are ready to publish the replacement.
 5. Backend rebuild dispatch uses owner `hsiryar`, repository `ryarcanvas`, workflow `pages.yml`, branch `main`, and a server-side token with Actions read/write permission. Never reuse a compromised token.
 

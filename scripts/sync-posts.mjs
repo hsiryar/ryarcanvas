@@ -1,6 +1,6 @@
 import { neon } from '@neondatabase/serverless';
 import fs from 'node:fs';
-const site='https://riarcanvas.online';
+const site='https://ryarcanvas.online';
 const database=process.env.DATABASE_URL;
 let posts=[];
 if(database){
